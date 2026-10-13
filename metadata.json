@@ -1,0 +1,8 @@
+{
+  "name": "cigarretes",
+  "description": "Projeto Livre — Método Prático para Parar de Fumar. Guia prático digital com 5 módulos, exercícios de mapeamento de gatilhos e acompanhamento de rotina.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
