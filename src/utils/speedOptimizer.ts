@@ -14,19 +14,27 @@ export const PRIORITY_IMAGES = [
 ];
 
 export const SECONDARY_IMAGES = [
-  '/images/bonus_parar_maconha.jpg',
-  '/images/bonus_cigarro_eletronico.jpg',
-  '/images/bonus_quebre_o_ciclo.jpg',
-  '/images/bonus_mapa_mental.jpg',
-  '/images/real_page_cronograma.jpg',
-  '/images/real_page_10dicas.jpg',
-  '/images/real_page_mapamental.jpg',
-  '/images/real_page_adeuscigarro.jpg',
-  '/images/real_page_vapepod.jpg',
-  '/images/real_page_quebreciclo.jpg',
-  '/images/preview_tecnica_fissura.jpg',
-  '/images/preview_folha_gatilhos.jpg',
-  '/images/preview_recuperacao_corpo.jpg'
+  '/images/hero_projeto_livre.webp',
+  '/images/bonus_10_dicas.webp',
+  '/images/bonus_adeus_cigarro.webp',
+  '/images/bonus_parar_maconha.webp',
+  '/images/bonus_cigarro_eletronico.webp',
+  '/images/bonus_quebre_o_ciclo.webp',
+  '/images/bonus_mapa_mental.webp',
+  '/images/real_page_cronograma.webp',
+  '/images/real_page_10dicas.webp',
+  '/images/real_page_mapamental.webp',
+  '/images/real_page_adeuscigarro.webp',
+  '/images/real_page_vapepod.webp',
+  '/images/real_page_quebreciclo.webp',
+  '/images/preview_tecnica_fissura.webp',
+  '/images/preview_folha_gatilhos.webp',
+  '/images/preview_recuperacao_corpo.webp',
+  '/images/depoimento_01.webp',
+  '/images/depoimento_02.webp',
+  '/images/depoimento_italo.webp',
+  '/images/depoimento_sssss.webp',
+  '/images/depoimento_zaas.webp'
 ];
 
 export const ALL_IMAGES = [...PRIORITY_IMAGES, ...SECONDARY_IMAGES];

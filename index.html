@@ -103,6 +103,8 @@
     <meta property="og:description" content="Conheça o método prático desenvolvido para ajudar a pessoa a parar de fumar em 30 dias, com ferramentas e planejamento passo a passo." />
     
     <!-- DNS preconnect to critical asset domains -->
+    <link rel="preconnect" href="https://i.ibb.co" crossorigin />
+    <link rel="dns-prefetch" href="https://i.ibb.co" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fast.wistia.com" />
@@ -121,47 +123,39 @@
     <!-- Parallel load Google Fonts to eliminate CSS @import blocking - optimized weights -->
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Montserrat:wght@900&family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
 
-    <!-- Preload critical Hero and first visible images for instant zero-delay paint -->
+    <!-- Preload critical Hero image for instant zero-delay first paint -->
     <link rel="preload" as="image" href="https://i.ibb.co/1fdCj3tk/Projeto-Livre-Rumo-Liberdade.png" type="image/png" fetchpriority="high" />
-    <link rel="preload" as="image" href="/images/bonus_10_dicas.jpg" type="image/jpeg" />
-    <link rel="preload" as="image" href="/images/bonus_adeus_cigarro.jpg" type="image/jpeg" />
+    <link rel="preload" as="image" href="/images/hero_projeto_livre.webp" type="image/webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="/images/bonus_10_dicas.webp" type="image/webp" />
 
-    <!-- Fast parallel image preloader to eliminate load delays across all sections -->
+    <!-- Non-blocking background image prefetcher -->
     <script>
       (function() {
-        var catalogImages = [
-          "https://i.ibb.co/1fdCj3tk/Projeto-Livre-Rumo-Liberdade.png",
-          "https://i.ibb.co/hFgNt1M7/Guia-para-Parar-de-Fumar.png",
-          "https://i.ibb.co/bjFQr27h/Guia-Adeus-Cigarro-Liberdade-Renovada.png",
-          "https://i.ibb.co/Y71jKYhk/Guia-Pr-tico-para-Parar-de-Fumar-Maconha.png",
-          "https://i.ibb.co/LBJJzHC/Guia-para-Abandonar-o-V-cio-em-Cigarro-Eletr-nico.png",
-          "https://i.ibb.co/MkQZtzj5/Quebre-o-Ciclo-Liberdade-e-Transforma-o-1.png",
-          "https://i.ibb.co/kg3Hgyfd/Mapa-Mental-para-Vencer-os-Gatilhos-1.png",
-          "/images/bonus_10_dicas.jpg",
-          "/images/bonus_adeus_cigarro.jpg",
-          "/images/bonus_parar_maconha.jpg",
-          "/images/bonus_cigarro_eletronico.jpg",
-          "/images/bonus_quebre_o_ciclo.jpg",
-          "/images/bonus_mapa_mental.jpg",
-          "/images/real_page_cronograma.jpg",
-          "/images/real_page_10dicas.jpg",
-          "/images/real_page_mapamental.jpg",
-          "/images/real_page_adeuscigarro.jpg",
-          "/images/real_page_vapepod.jpg",
-          "/images/real_page_quebreciclo.jpg",
-          "/images/preview_tecnica_fissura.jpg",
-          "/images/preview_folha_gatilhos.jpg",
-          "/images/preview_recuperacao_corpo.jpg"
-        ];
-        // Instantly prefetch and hardware-decode all catalog images
-        for (var i = 0; i < catalogImages.length; i++) {
-          var img = new Image();
-          img.decoding = "async";
-          img.referrerPolicy = "no-referrer";
-          img.src = catalogImages[i];
-          if (img.decode) {
-            img.decode().catch(function() {});
+        var startPrefetch = function() {
+          var images = [
+            "/images/bonus_10_dicas.webp",
+            "/images/bonus_adeus_cigarro.webp",
+            "/images/bonus_parar_maconha.webp",
+            "/images/bonus_cigarro_eletronico.webp",
+            "/images/bonus_quebre_o_ciclo.webp",
+            "/images/bonus_mapa_mental.webp",
+            "/images/real_page_cronograma.webp",
+            "/images/real_page_10dicas.webp",
+            "/images/real_page_mapamental.webp",
+            "/images/real_page_adeuscigarro.webp",
+            "/images/real_page_vapepod.webp",
+            "/images/real_page_quebreciclo.webp"
+          ];
+          for (var i = 0; i < images.length; i++) {
+            var img = new Image();
+            img.decoding = "async";
+            img.src = images[i];
           }
+        };
+        if ('requestIdleCallback' in window) {
+          window.requestIdleCallback(startPrefetch, { timeout: 300 });
+        } else {
+          setTimeout(startPrefetch, 100);
         }
       })();
     </script>

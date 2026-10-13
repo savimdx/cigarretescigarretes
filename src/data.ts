@@ -85,7 +85,11 @@ export const BONUSES: BonusItem[] = [
     originalPrice: 37.00,
     tag: "TÉCNICAS PRÁTICAS",
     image: "https://i.ibb.co/hFgNt1M7/Guia-para-Parar-de-Fumar.png",
-    fallbackImage: "/images/bonus_10_dicas.jpg"
+    fallbackImage: "/images/bonus_10_dicas.webp",
+    fallbackSources: [
+      "/images/bonus_10_dicas.webp",
+      "/images/bonus_10_dicas.jpg"
+    ]
   },
   {
     id: "bon-2",
@@ -95,7 +99,11 @@ export const BONUSES: BonusItem[] = [
     originalPrice: 47.00,
     tag: "TRANSFORMAÇÃO MENTAL",
     image: "https://i.ibb.co/bjFQr27h/Guia-Adeus-Cigarro-Liberdade-Renovada.png",
-    fallbackImage: "/images/bonus_adeus_cigarro.jpg"
+    fallbackImage: "/images/bonus_adeus_cigarro.webp",
+    fallbackSources: [
+      "/images/bonus_adeus_cigarro.webp",
+      "/images/bonus_adeus_cigarro.jpg"
+    ]
   },
   {
     id: "bon-3",
@@ -105,7 +113,11 @@ export const BONUSES: BonusItem[] = [
     originalPrice: 47.00,
     tag: "LIBERDADE COGNITIVA",
     image: "https://i.ibb.co/Y71jKYhk/Guia-Pr-tico-para-Parar-de-Fumar-Maconha.png",
-    fallbackImage: "/images/bonus_parar_maconha.jpg"
+    fallbackImage: "/images/bonus_parar_maconha.webp",
+    fallbackSources: [
+      "/images/bonus_parar_maconha.webp",
+      "/images/bonus_parar_maconha.jpg"
+    ]
   },
   {
     id: "bon-4",
@@ -115,7 +127,11 @@ export const BONUSES: BonusItem[] = [
     originalPrice: 47.00,
     tag: "DESINTOXICAÇÃO DE VAPE",
     image: "https://i.ibb.co/LBJJzHC/Guia-para-Abandonar-o-V-cio-em-Cigarro-Eletr-nico.png",
-    fallbackImage: "/images/bonus_cigarro_eletronico.jpg"
+    fallbackImage: "/images/bonus_cigarro_eletronico.webp",
+    fallbackSources: [
+      "/images/bonus_cigarro_eletronico.webp",
+      "/images/bonus_cigarro_eletronico.jpg"
+    ]
   },
   {
     id: "bon-5",
@@ -125,7 +141,11 @@ export const BONUSES: BonusItem[] = [
     originalPrice: 37.00,
     tag: "BLINDAGEM CONTRA RECAÍDAS",
     image: "https://i.ibb.co/MkQZtzj5/Quebre-o-Ciclo-Liberdade-e-Transforma-o-1.png",
-    fallbackImage: "/images/bonus_quebre_o_ciclo.jpg"
+    fallbackImage: "/images/bonus_quebre_o_ciclo.webp",
+    fallbackSources: [
+      "/images/bonus_quebre_o_ciclo.webp",
+      "/images/bonus_quebre_o_ciclo.jpg"
+    ]
   },
   {
     id: "bon-6",
@@ -135,7 +155,11 @@ export const BONUSES: BonusItem[] = [
     originalPrice: 47.00,
     tag: "MAPA VISUAL PRÁTICO",
     image: "https://i.ibb.co/kg3Hgyfd/Mapa-Mental-para-Vencer-os-Gatilhos-1.png",
-    fallbackImage: "/images/bonus_mapa_mental.jpg"
+    fallbackImage: "/images/bonus_mapa_mental.webp",
+    fallbackSources: [
+      "/images/bonus_mapa_mental.webp",
+      "/images/bonus_mapa_mental.jpg"
+    ]
   }
 ];
 
@@ -149,7 +173,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
     achievement: "✓ 4 meses sem fumar",
     avatarSeed: "marcos",
     avatarUrl: "https://i.ibb.co/RGYLdDP8/pexels-italo-melo-2379004.jpg",
-    avatarFallback: "/images/depoimento_italo.jpg"
+    avatarFallback: "/images/depoimento_italo.webp"
   },
   {
     id: "test-2",
@@ -160,7 +184,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
     achievement: "✓ Livre do Vape & Pod",
     avatarSeed: "camila",
     avatarUrl: "https://i.ibb.co/CsDtwWfw/Depoimento-01.jpg",
-    avatarFallback: "/images/depoimento_01.jpg"
+    avatarFallback: "/images/depoimento_01.webp"
   },
   {
     id: "test-3",
@@ -171,7 +195,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
     achievement: "✓ Concluiu os 30 dias",
     avatarSeed: "roberto",
     avatarUrl: "https://i.ibb.co/jkXX8k5t/sssss.jpg",
-    avatarFallback: "/images/depoimento_sssss.jpg"
+    avatarFallback: "/images/depoimento_sssss.webp"
   },
   {
     id: "test-4",
@@ -182,7 +206,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
     achievement: "✓ Superou as fissuras",
     avatarSeed: "juliana",
     avatarUrl: "https://i.ibb.co/Fknsjjmt/Depoimento-02.jpg",
-    avatarFallback: "/images/depoimento_02.jpg"
+    avatarFallback: "/images/depoimento_02.webp"
   },
   {
     id: "test-5",
@@ -193,7 +217,7 @@ export const TESTIMONIALS: TestimonialItem[] = [
     achievement: "✓ 100% sem recaídas",
     avatarSeed: "eduardo",
     avatarUrl: "https://i.ibb.co/zH8CGq9d/zaas.jpg",
-    avatarFallback: "/images/depoimento_zaas.jpg"
+    avatarFallback: "/images/depoimento_zaas.webp"
   }
 ];
 

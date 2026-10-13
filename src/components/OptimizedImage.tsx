@@ -42,11 +42,21 @@ export const OptimizedImage: React.FC<OptimizedImageProps> = ({
   useEffect(() => {
     const list: string[] = [];
     if (fallbackSources && fallbackSources.length > 0) {
-      list.push(...fallbackSources);
+      fallbackSources.forEach((s) => {
+        if (s.endsWith('.jpg') || s.endsWith('.png')) {
+          const webp = s.replace(/\.(jpg|png)$/, '.webp');
+          if (!list.includes(webp)) list.push(webp);
+        }
+        if (!list.includes(s)) list.push(s);
+      });
     } else if (fallbackSrc) {
+      if (fallbackSrc.endsWith('.jpg') || fallbackSrc.endsWith('.png')) {
+        const webp = fallbackSrc.replace(/\.(jpg|png)$/, '.webp');
+        list.push(webp);
+      }
       list.push(fallbackSrc);
     }
-    fallbackListRef.current = list.filter(item => item !== src);
+    fallbackListRef.current = list.filter((item) => item !== src);
     fallbackIdxRef.current = 0;
 
     setCurrentSrc(src);
@@ -62,6 +72,17 @@ export const OptimizedImage: React.FC<OptimizedImageProps> = ({
       setIsLoaded(true);
     }
   }, [currentSrc]);
+
+  // Safety fallback for slow remote hosts (e.g. free image host throttling)
+  useEffect(() => {
+    if (isLoaded || !currentSrc.startsWith('http')) return;
+    const timer = setTimeout(() => {
+      if (!loadedImageGlobalCache.has(currentSrc) && imgRef.current && (!imgRef.current.complete || imgRef.current.naturalWidth === 0)) {
+        handleError();
+      }
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, [currentSrc, isLoaded]);
 
   const handleError = () => {
     if (fallbackIdxRef.current < fallbackListRef.current.length) {

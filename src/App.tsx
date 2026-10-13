@@ -42,47 +42,47 @@ interface ProductPreviewItem {
 
 const PRODUCT_IMAGES: ProductPreviewItem[] = [
   {
-    src: "/images/real_page_cronograma.jpg",
+    src: "/images/real_page_cronograma.webp",
     alt: "Plano de 30 Dias: Tabela Prática de Hábitos e Metas",
     tag: "PRODUTO PRINCIPAL"
   },
   {
-    src: "/images/real_page_10dicas.jpg",
+    src: "/images/real_page_10dicas.webp",
     alt: "10 Dicas Essenciais: Respiração Rítmica & Regra dos 5 Minutos",
     tag: "BÔNUS 1"
   },
   {
-    src: "/images/real_page_mapamental.jpg",
+    src: "/images/real_page_mapamental.webp",
     alt: "Mapa Mental: Gatilhos, Horários Críticos e Reposição Saudável",
     tag: "BÔNUS 6"
   },
   {
-    src: "/images/real_page_adeuscigarro.jpg",
+    src: "/images/real_page_adeuscigarro.webp",
     alt: "Adeus, Cigarro: Exercício de Reprogramação do Hábito",
     tag: "BÔNUS 2"
   },
   {
-    src: "/images/real_page_vapepod.jpg",
+    src: "/images/real_page_vapepod.webp",
     alt: "Protocolo de Desmame Gradual: Redução de Vape & Pod",
     tag: "BÔNUS 4"
   },
   {
-    src: "/images/real_page_quebreciclo.jpg",
+    src: "/images/real_page_quebreciclo.webp",
     alt: "Ficha de Emergência: Plano Anti-Recaída Passo a Passo",
     tag: "BÔNUS 5"
   },
   {
-    src: "/images/preview_tecnica_fissura.jpg",
+    src: "/images/preview_tecnica_fissura.webp",
     alt: "Técnica de 4 Minutos Contra a Fissura: Guia Prático",
     tag: "AÇÃO IMEDIATA"
   },
   {
-    src: "/images/preview_folha_gatilhos.jpg",
+    src: "/images/preview_folha_gatilhos.webp",
     alt: "Mapa Diário de Gatilhos & Ações Substitutas",
     tag: "EXERCÍCIO PRÁTICO"
   },
   {
-    src: "/images/preview_recuperacao_corpo.jpg",
+    src: "/images/preview_recuperacao_corpo.webp",
     alt: "Linha do Tempo: A Recuperação do Seu Organismo",
     tag: "SAÚDE CORPORAL"
   }
