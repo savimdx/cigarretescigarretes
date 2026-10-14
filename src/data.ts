@@ -1,6 +1,6 @@
 import { BenefitItem, BonusItem, TestimonialItem, FAQItem } from './types';
 
-export const CHECKOUT_URL = "https://pay.hotmart.com/E107379450E?checkoutMode=10";
+export const CHECKOUT_URL = "https://pay.wiapy.com/f-dzU_VQGWB3";
 
 export const HERO_BULLETS = [
   "Método prático estruturado para parar de fumar em 30 dias",
