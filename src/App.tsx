@@ -719,34 +719,64 @@ export default function App() {
             </div>
 
             {/* Checklist of what is included */}
-            <div className="max-w-md mx-auto space-y-3.5 mb-8 text-left text-xs sm:text-sm font-bold text-slate-800">
+            <div className="max-w-lg mx-auto space-y-3.5 mb-8 text-left text-xs sm:text-sm font-bold text-slate-800">
               <div className="flex items-start gap-3">
                 <Check className="w-4.5 h-4.5 text-emerald-600 shrink-0 stroke-[3.5] mt-0.5" />
                 <span>Método Completo Projeto Livre — 5 Módulos para Parar de Fumar em 30 Dias</span>
               </div>
-              <div className="flex items-start gap-3">
-                <Check className="w-4.5 h-4.5 text-emerald-600 shrink-0 stroke-[3.5] mt-0.5" />
-                <span>Bônus 1: 10 Dicas Essenciais Para Parar De Fumar</span>
+              <div className="flex items-start justify-between gap-3">
+                <div className="flex items-start gap-3 min-w-0">
+                  <Check className="w-4.5 h-4.5 text-emerald-600 shrink-0 stroke-[3.5] mt-0.5" />
+                  <span>Bônus 1: 10 Dicas Essenciais Para Parar De Fumar</span>
+                </div>
+                <span className="text-red-600 line-through decoration-red-600 decoration-2 font-black text-xs sm:text-sm shrink-0 whitespace-nowrap">
+                  R$ 37,00
+                </span>
               </div>
-              <div className="flex items-start gap-3">
-                <Check className="w-4.5 h-4.5 text-emerald-600 shrink-0 stroke-[3.5] mt-0.5" />
-                <span>Bônus 2: Adeus, Cigarro (Guia de Reprogramação Mental)</span>
+              <div className="flex items-start justify-between gap-3">
+                <div className="flex items-start gap-3 min-w-0">
+                  <Check className="w-4.5 h-4.5 text-emerald-600 shrink-0 stroke-[3.5] mt-0.5" />
+                  <span>Bônus 2: Adeus, Cigarro (Guia de Reprogramação Mental)</span>
+                </div>
+                <span className="text-red-600 line-through decoration-red-600 decoration-2 font-black text-xs sm:text-sm shrink-0 whitespace-nowrap">
+                  R$ 47,00
+                </span>
               </div>
-              <div className="flex items-start gap-3">
-                <Check className="w-4.5 h-4.5 text-emerald-600 shrink-0 stroke-[3.5] mt-0.5" />
-                <span>Bônus 3: Como Parar De Fumar Maconha (Passo a Passo)</span>
+              <div className="flex items-start justify-between gap-3">
+                <div className="flex items-start gap-3 min-w-0">
+                  <Check className="w-4.5 h-4.5 text-emerald-600 shrink-0 stroke-[3.5] mt-0.5" />
+                  <span>Bônus 3: Como Parar De Fumar Maconha (Passo a Passo)</span>
+                </div>
+                <span className="text-red-600 line-through decoration-red-600 decoration-2 font-black text-xs sm:text-sm shrink-0 whitespace-nowrap">
+                  R$ 47,00
+                </span>
               </div>
-              <div className="flex items-start gap-3">
-                <Check className="w-4.5 h-4.5 text-emerald-600 shrink-0 stroke-[3.5] mt-0.5" />
-                <span>Bônus 4: Guia Para Abandonar O Vício em Cigarro Eletrônico</span>
+              <div className="flex items-start justify-between gap-3">
+                <div className="flex items-start gap-3 min-w-0">
+                  <Check className="w-4.5 h-4.5 text-emerald-600 shrink-0 stroke-[3.5] mt-0.5" />
+                  <span>Bônus 4: Guia Para Abandonar O Vício em Cigarro Eletrônico</span>
+                </div>
+                <span className="text-red-600 line-through decoration-red-600 decoration-2 font-black text-xs sm:text-sm shrink-0 whitespace-nowrap">
+                  R$ 47,00
+                </span>
               </div>
-              <div className="flex items-start gap-3">
-                <Check className="w-4.5 h-4.5 text-emerald-600 shrink-0 stroke-[3.5] mt-0.5" />
-                <span>Bônus 5: Quebre O Ciclo (Protocolo Anti-Recaída Definitivo)</span>
+              <div className="flex items-start justify-between gap-3">
+                <div className="flex items-start gap-3 min-w-0">
+                  <Check className="w-4.5 h-4.5 text-emerald-600 shrink-0 stroke-[3.5] mt-0.5" />
+                  <span>Bônus 5: Quebre O Ciclo (Protocolo Anti-Recaída Definitivo)</span>
+                </div>
+                <span className="text-red-600 line-through decoration-red-600 decoration-2 font-black text-xs sm:text-sm shrink-0 whitespace-nowrap">
+                  R$ 37,00
+                </span>
               </div>
-              <div className="flex items-start gap-3">
-                <Check className="w-4.5 h-4.5 text-emerald-600 shrink-0 stroke-[3.5] mt-0.5" />
-                <span>Bônus 6: Mapa Mental para Vencer os Gatilhos no Vício em Cigarro</span>
+              <div className="flex items-start justify-between gap-3">
+                <div className="flex items-start gap-3 min-w-0">
+                  <Check className="w-4.5 h-4.5 text-emerald-600 shrink-0 stroke-[3.5] mt-0.5" />
+                  <span>Bônus 6: Mapa Mental para Vencer os Gatilhos no Vício em Cigarro</span>
+                </div>
+                <span className="text-red-600 line-through decoration-red-600 decoration-2 font-black text-xs sm:text-sm shrink-0 whitespace-nowrap">
+                  R$ 47,00
+                </span>
               </div>
               <div className="flex items-start gap-3">
                 <Check className="w-4.5 h-4.5 text-emerald-600 shrink-0 stroke-[3.5] mt-0.5" />
@@ -774,6 +804,16 @@ export default function App() {
               <span className="text-xs sm:text-sm font-bold text-slate-500 uppercase tracking-wider block">
                 PAGAMENTO ÚNICO
               </span>
+
+              {/* Ancoragem de preço em vermelho e riscado */}
+              <div className="flex items-center justify-center gap-1.5 sm:gap-2 text-base sm:text-lg md:text-xl font-bold pt-1">
+                <span className="text-slate-600 font-extrabold">De</span>
+                <span className="text-red-600 line-through decoration-red-600 decoration-[2.5px] font-black tracking-tight">
+                  R$ 89,90
+                </span>
+                <span className="text-slate-800 font-extrabold">por</span>
+              </div>
+
               <div className="w-full flex items-center justify-center py-0">
                 <div
                   style={{ fontFamily: "'Montserrat', sans-serif" }}
