@@ -925,12 +925,9 @@ export default function App() {
               <p className="text-sm md:text-base text-slate-600 font-medium">
                 Tem alguma dúvida antes de começar? Fale conosco pelo e-mail de suporte:
               </p>
-              <a
-                href="mailto:contato@projeto-livre.site"
-                className="inline-block text-sm sm:text-base md:text-lg font-bold text-emerald-700 hover:text-emerald-800 tracking-tight break-all transition-colors underline underline-offset-4 decoration-emerald-300 hover:decoration-emerald-500"
-              >
+              <p className="text-sm sm:text-base md:text-lg font-bold text-slate-800 tracking-tight break-all">
                 contato@projeto-livre.site
-              </a>
+              </p>
             </div>
           </div>
 
@@ -951,7 +948,7 @@ export default function App() {
           <div className="h-[1px] bg-slate-200 my-4" />
 
           <p className="text-[11px] text-slate-500">
-            © {new Date().getFullYear()} Projeto Livre. Todos os direitos reservados. • Contato: <a href="mailto:contato@projeto-livre.site" className="hover:text-emerald-700 transition-colors font-semibold">contato@projeto-livre.site</a>
+            © {new Date().getFullYear()} Projeto Livre. Todos os direitos reservados. • Contato: <span className="font-semibold text-slate-700">contato@projeto-livre.site</span>
           </p>
           <p className="text-[10px] text-slate-400 max-w-2xl mx-auto leading-relaxed">
             Aviso Legal: O Projeto Livre é um material digital educativo focado em desenvolvimento de hábitos, auto-observação e planejamento pessoal. O conteúdo não constitui aconselhamento médico, diagnóstico clínico ou tratamento de saúde, e não substitui a consulta e o acompanhamento de profissionais médicos ou psicólogos habilitados.

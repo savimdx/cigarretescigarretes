@@ -23,17 +23,17 @@ const safeLocalStorage = {
 };
 
 export default function HeaderBanner({ timeLeft }: HeaderBannerProps) {
-  const [secondsLeft, setSecondsLeft] = useState<number>(30 * 60);
+  const [secondsLeft, setSecondsLeft] = useState<number>(15 * 60);
 
   useEffect(() => {
     if (timeLeft !== undefined) return;
 
-    const savedTime = safeLocalStorage.getItem('projeto_livre_banner_timer_30');
-    let initialTime = 30 * 60;
+    const savedTime = safeLocalStorage.getItem('projeto_livre_banner_timer_15');
+    let initialTime = 15 * 60;
 
     if (savedTime) {
       const parsed = parseInt(savedTime, 10);
-      if (parsed > 0 && parsed <= 30 * 60) {
+      if (parsed > 0 && parsed <= 15 * 60) {
         initialTime = parsed;
       }
     }
@@ -43,11 +43,11 @@ export default function HeaderBanner({ timeLeft }: HeaderBannerProps) {
     const interval = setInterval(() => {
       setSecondsLeft((prev) => {
         if (prev <= 1) {
-          safeLocalStorage.setItem('projeto_livre_banner_timer_30', (30 * 60).toString());
-          return 30 * 60;
+          safeLocalStorage.setItem('projeto_livre_banner_timer_15', (15 * 60).toString());
+          return 15 * 60;
         }
         const updated = prev - 1;
-        safeLocalStorage.setItem('projeto_livre_banner_timer_30', updated.toString());
+        safeLocalStorage.setItem('projeto_livre_banner_timer_15', updated.toString());
         return updated;
       });
     }, 1000);
