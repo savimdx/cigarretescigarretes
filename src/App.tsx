@@ -196,6 +196,20 @@ export default function App() {
     document.title = "Projeto Livre — Método Prático para Parar de Fumar";
   }, []);
 
+  const scrollToPrice = (e?: React.MouseEvent) => {
+    if (e) e.preventDefault();
+    const el = document.getElementById('precio-oferta') || document.getElementById('scroll-target-oferta');
+    if (el) {
+      const headerOffset = 85;
+      const elementPosition = el.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   const toggleFaq = (id: string) => {
     setExpandedFaq(expandedFaq === id ? null : id);
   };
@@ -264,7 +278,23 @@ export default function App() {
             ))}
           </ul>
 
-
+          {/* Scroll to Offer Button - Abaixo dos benefícios da primeira seção */}
+          <div className="pt-6 w-full max-w-md mx-auto">
+            <button
+              onClick={scrollToPrice}
+              className="w-full bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 text-white font-black py-4 px-8 rounded-xl sm:rounded-2xl text-base sm:text-lg uppercase tracking-wider transition-all shadow-[0_8px_24px_rgba(16,185,129,0.35)] flex items-center justify-center gap-2 hover:-translate-y-0.5 text-center cursor-pointer group"
+            >
+              <span>QUERO CONHECER O MÉTODO</span>
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </button>
+            <div className="flex items-center justify-center gap-4 text-[11px] text-slate-400 font-medium mt-2">
+              <span className="flex items-center gap-1">
+                <Lock className="w-3.5 h-3.5 text-slate-400" /> Pagamento 100% seguro
+              </span>
+              <span>•</span>
+              <span>Garantia incondicional de 7 dias</span>
+            </div>
+          </div>
 
         </div>
       </header>
@@ -425,6 +455,24 @@ export default function App() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Scroll to Offer Button - Abaixo dos bônus */}
+          <div className="mt-10 sm:mt-12 text-center max-w-md mx-auto">
+            <button
+              onClick={scrollToPrice}
+              className="w-full bg-emerald-600 hover:bg-emerald-700 active:bg-emerald-800 text-white font-black py-4 px-8 rounded-xl sm:rounded-2xl text-base sm:text-lg uppercase tracking-wider transition-all shadow-[0_8px_24px_rgba(16,185,129,0.35)] flex items-center justify-center gap-2 hover:-translate-y-0.5 text-center cursor-pointer group"
+            >
+              <span>QUERO GARANTIR TODOS OS BÔNUS</span>
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </button>
+            <div className="flex items-center justify-center gap-4 text-[11px] text-slate-400 font-medium mt-2">
+              <span className="flex items-center gap-1">
+                <Lock className="w-3.5 h-3.5 text-slate-400" /> Acesso imediato
+              </span>
+              <span>•</span>
+              <span>Garantia incondicional de 7 dias</span>
+            </div>
           </div>
 
         </div>
@@ -753,10 +801,10 @@ export default function App() {
             </div>
 
             {/* Divider */}
-            <div id="scroll-target-oferta" className="h-[1px] bg-slate-100 max-w-md mx-auto my-4" />
+            <div id="scroll-target-oferta" className="h-[1px] bg-slate-100 max-w-md mx-auto my-4 scroll-mt-24" />
 
             {/* Price section */}
-            <div id="precio-oferta" className="text-center space-y-2 mb-5 max-w-2xl mx-auto w-full px-2">
+            <div id="precio-oferta" className="text-center space-y-2 mb-5 max-w-2xl mx-auto w-full px-2 scroll-mt-24">
               <span className="text-xs sm:text-sm font-bold text-slate-500 uppercase tracking-wider block">
                 PAGAMENTO ÚNICO
               </span>
