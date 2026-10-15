@@ -232,7 +232,7 @@ export const FAQS: FAQItem[] = [
   {
     id: "faq-2",
     question: "O que está incluído na compra?",
-    answer: "Ao adquirir o Projeto Livre por R$ 9,90 (pagamento único), você recebe o método principal com os 5 módulos completos, além de 6 bônus exclusivos: Bônus 1 (10 Dicas Essenciais Para Parar De Fumar), Bônus 2 (Adeus, Cigarro), Bônus 3 (Como Parar De Fumar Maconha), Bônus 4 (Guia Para Abandonar O Vício em Cigarro Eletrônico), Bônus 5 (Quebre O Ciclo) e Bônus 6 (Mapa Mental para Vencer os Gatilhos no Vício em Cigarro)."
+    answer: "Ao adquirir o Projeto Livre por R$ 14,90 (pagamento único), você recebe o método principal com os 5 módulos completos, além de 6 bônus exclusivos: Bônus 1 (10 Dicas Essenciais Para Parar De Fumar), Bônus 2 (Adeus, Cigarro), Bônus 3 (Como Parar De Fumar Maconha), Bônus 4 (Guia Para Abandonar O Vício em Cigarro Eletrônico), Bônus 5 (Quebre O Ciclo) e Bônus 6 (Mapa Mental para Vencer os Gatilhos no Vício em Cigarro)."
   },
   {
     id: "faq-3",

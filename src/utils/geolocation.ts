@@ -1,7 +1,7 @@
 /**
  * Fixed Offer Pricing Configuration for Projeto Livre
  *
- * Offer price is fixed at R$ 9,90 (pagamento único)
+ * Offer price is fixed at R$ 14,90 (pagamento único)
  */
 
 export interface CountryPricingConfig {
@@ -16,8 +16,8 @@ export interface CountryPricingConfig {
   flag: string;
 }
 
-export const FIXED_OFFER_PRICE = 9.90;
-export const FIXED_OFFER_PRICE_FORMATTED = 'R$ 9,90';
+export const FIXED_OFFER_PRICE = 14.90;
+export const FIXED_OFFER_PRICE_FORMATTED = 'R$ 14,90';
 export const FIXED_CROSSED_PRICE_FORMATTED = 'R$ 89,90';
 
 export const COUNTRY_PRICING: Record<string, CountryPricingConfig> = {
