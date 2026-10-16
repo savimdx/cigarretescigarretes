@@ -62,7 +62,7 @@ export default function PurchaseModal({ isOpen, onClose }: PurchaseModalProps) {
           {/* Order Summary */}
           <div className="bg-slate-50 border border-slate-200 rounded-xl p-4 my-5 space-y-2">
             <div className="flex justify-between items-center text-xs">
-              <span className="text-slate-700 font-medium">Guia Digital Projeto Livre (5 Módulos)</span>
+              <span className="text-slate-700 font-medium">Guia Digital Projeto Livre (13 Módulos)</span>
               <span className="text-slate-500 font-semibold">Incluso</span>
             </div>
             <div className="flex justify-between items-center text-xs text-emerald-700">

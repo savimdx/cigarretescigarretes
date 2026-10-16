@@ -694,7 +694,7 @@ export default function App() {
                 Projeto Livre — Método Prático para Parar de Fumar
               </h3>
               <p className="text-xs sm:text-sm text-emerald-700 font-semibold italic">
-                O método prático estruturado em 5 módulos e ferramentas de rotina para ajudar a pessoa a parar de fumar em 30 dias.
+                O método prático estruturado em 13 módulos e ferramentas de rotina para ajudar a pessoa a parar de fumar em 30 dias.
               </p>
             </div>
 
@@ -722,7 +722,7 @@ export default function App() {
             <div className="max-w-lg mx-auto space-y-3.5 mb-8 text-left text-xs sm:text-sm font-bold text-slate-800">
               <div className="flex items-start gap-3">
                 <Check className="w-4.5 h-4.5 text-emerald-600 shrink-0 stroke-[3.5] mt-0.5" />
-                <span>Método Completo Projeto Livre — 5 Módulos para Parar de Fumar em 30 Dias</span>
+                <span>Método Completo Projeto Livre — 13 Módulos para Parar de Fumar em 30 Dias</span>
               </div>
               <div className="flex items-start justify-between gap-3">
                 <div className="flex items-start gap-3 min-w-0">
