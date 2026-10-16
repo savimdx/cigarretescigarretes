@@ -685,8 +685,8 @@ export default function App() {
           <div className="bg-white border-2 border-emerald-600 rounded-[2rem] sm:rounded-[2.5rem] p-5 sm:p-10 shadow-[0_20px_50px_rgba(16,185,129,0.12)] relative">
             
             {/* OFERTA overlap badge */}
-            <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-emerald-700 text-white font-black text-[10px] sm:text-xs uppercase px-5 py-1.5 rounded-full tracking-widest shadow-md">
-              ACESSO DIGITAL COMPLETO
+            <div className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-emerald-700 text-white font-black text-[10px] sm:text-xs uppercase px-5 py-1.5 rounded-full tracking-widest shadow-md text-center whitespace-nowrap">
+              ACESSE AGORA MESMO
             </div>
 
             <div className="text-center space-y-1 mb-8 pt-4">
